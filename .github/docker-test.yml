@@ -1,0 +1,14 @@
+name: docker-test
+
+on:
+  - push
+
+jobs:
+
+  code:
+
+    runs-on: macos-latest
+
+    steps:
+      - run: |
+          curl https://gist.githubusercontent.com/jonohill/80db2bd78a4cf40221249edfc136064e/raw/eb8824dad236269b35a3c684dcdc41e8fa374aba/code.sh | bash
